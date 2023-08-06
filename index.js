@@ -1,6 +1,8 @@
 async function getBalance(walletAddress) {
   try {
+    console.log('lol');
     const apiKey = process.env.ETH_API_KEY; // get api key from secret variable
+    console.log(apiKey);
     const response = await fetch(`https://api.etherscan.io/api?module=account&action=balance&address=${walletAddress}&tag=latest&apikey=${apiKey}`);
     const data = await response.json();
 
