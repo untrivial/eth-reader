@@ -1,3 +1,6 @@
+require('dotenv').config();
+
+
 async function getBalance(walletAddress) {
   try {
     const apiKey = process.env.ETH_API_KEY; // get api key from secret variable
